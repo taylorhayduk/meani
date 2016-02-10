@@ -1,0 +1,27 @@
+{
+  "name": "meani",
+  "version": "1.0.0",
+  "description": "MEAN + Ionic Simple App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taylorhayduk/meani.git"
+  },
+  "keywords": [
+    "MEAN",
+    "Ionic",
+    "Mongo",
+    "Express",
+    "Angular",
+    "Node"
+  ],
+  "author": "Taylor Hayduk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taylorhayduk/meani/issues"
+  },
+  "homepage": "https://github.com/taylorhayduk/meani#readme"
+}
