@@ -1,0 +1,22 @@
+<ion-view title="Login">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <div style="text-align:center;">
+            <img src="img/D80Yq6QS1WAPlzMJxVIa_d3e06c_37af49dd77864af4a9b776394158357f.png" width="10%" height="auto">
+        </div>
+        <form class="list">
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">Username</span>
+                    <input type="text" placeholder="">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" placeholder="">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <a ui-sref="patientoryMenu.profile" class="button button-stable button-block ">Log in</a>
+            <a href="#" onclick="window.open('/signup', '_system', 'location=yes'); return false;" class="button button-positive button-clear button-block ">Or create an account</a>
+        </form>
+    </ion-content>
+</ion-view>
