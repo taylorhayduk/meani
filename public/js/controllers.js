@@ -1,26 +1,18 @@
 angular.module('app.controllers', [])
-     
+  
+.controller('browseCtrl', function($scope) {
+
+})
+   
+.controller('wishListCtrl', function($scope) {
+
+})
+   
+.controller('friendsCtrl', function($scope) {
+
+})
+      
 .controller('loginCtrl', function($scope) {
-
-})
-   
-.controller('profileCtrl', function($scope) {
-
-})
-   
-.controller('patientoryHomeCtrl', function($scope) {
-
-})
-   
-.controller('billsCtrl', function($scope) {
-
-})
-   
-.controller('medicationsCtrl', function($scope) {
-
-})
-   
-.controller('medicalHisotryCtrl', function($scope) {
 
 })
  

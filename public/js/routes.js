@@ -9,91 +9,67 @@ angular.module('app.routes', [])
   $stateProvider
     
       
-    .state('patientoryMenu', {
-      url: '/side-menu21',
+        
+    .state('tabsController.browse', {
+      url: '/browse',
+      views: {
+        'tab1': {
+          templateUrl: 'templates/browse.html',
+          controller: 'browseCtrl'
+        }
+      }
+    })
+        
+      
+    
+      
+        
+    .state('tabsController.wishList', {
+      url: '/wishlist',
+      views: {
+        'tab2': {
+          templateUrl: 'templates/wishList.html',
+          controller: 'wishListCtrl'
+        }
+      }
+    })
+        
+      
+    
+      
+        
+    .state('tabsController.friends', {
+      url: '/friends',
+      views: {
+        'tab3': {
+          templateUrl: 'templates/friends.html',
+          controller: 'friendsCtrl'
+        }
+      }
+    })
+        
+      
+    
+      
+    .state('tabsController', {
+      url: '/page1',
       abstract:true,
-      templateUrl: 'templates/patientoryMenu.html'
+      templateUrl: 'templates/tabsController.html'
     })
       
     
       
         
     .state('login', {
-      url: '/page1',
+      url: '/page5',
       templateUrl: 'templates/login.html',
       controller: 'loginCtrl'
-    })
-        
-      
-    
-      
-        
-    .state('patientoryMenu.profile', {
-      url: '/page2',
-      views: {
-        'side-menu21': {
-          templateUrl: 'templates/profile.html',
-          controller: 'profileCtrl'
-        }
-      }
-    })
-        
-      
-    
-      
-        
-    .state('patientoryHome', {
-      url: '/page3',
-      templateUrl: 'templates/patientoryHome.html',
-      controller: 'patientoryHomeCtrl'
-    })
-        
-      
-    
-      
-        
-    .state('patientoryMenu.bills', {
-      url: '/page4',
-      views: {
-        'side-menu21': {
-          templateUrl: 'templates/bills.html',
-          controller: 'billsCtrl'
-        }
-      }
-    })
-        
-      
-    
-      
-        
-    .state('patientoryMenu.medications', {
-      url: '/page6',
-      views: {
-        'side-menu21': {
-          templateUrl: 'templates/medications.html',
-          controller: 'medicationsCtrl'
-        }
-      }
-    })
-        
-      
-    
-      
-        
-    .state('patientoryMenu.medicalHisotry', {
-      url: '/page5',
-      views: {
-        'side-menu21': {
-          templateUrl: 'templates/medicalHisotry.html',
-          controller: 'medicalHisotryCtrl'
-        }
-      }
     })
         
       
     ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/page3');
+  $urlRouterProvider.otherwise('/page5');
 
 });

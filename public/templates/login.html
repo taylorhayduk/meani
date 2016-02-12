@@ -1,22 +1,11 @@
 <ion-view title="Login">
     <ion-content overflow-scroll="true" padding="true" class="has-header">
-        <div style="text-align:center;">
-            <img src="img/D80Yq6QS1WAPlzMJxVIa_d3e06c_37af49dd77864af4a9b776394158357f.png" width="10%" height="auto">
+        <div style="line-height: 250px; border: 1px solid rgb(238, 238, 238); border-radius: 3px; text-align: center; background-color: rgb(255, 255, 255);">
+            <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
         </div>
         <form class="list">
-            <ion-list>
-                <label class="item item-input">
-                    <span class="input-label">Username</span>
-                    <input type="text" placeholder="">
-                </label>
-                <label class="item item-input">
-                    <span class="input-label">Password</span>
-                    <input type="password" placeholder="">
-                </label>
-            </ion-list>
-            <div class="spacer" style="height: 40px;"></div>
-            <a ui-sref="patientoryMenu.profile" class="button button-stable button-block ">Log in</a>
-            <a href="#" onclick="window.open('/signup', '_system', 'location=yes'); return false;" class="button button-positive button-clear button-block ">Or create an account</a>
+            <ion-list></ion-list>
+            <a ui-sref="tabsController.browse" class="button button-positive button-block  icon-left ion-social-facebook">Log in w/ Facebook</a>
         </form>
     </ion-content>
 </ion-view>
